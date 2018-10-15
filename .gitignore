@@ -6,4 +6,6 @@ makefile
 *.json
 
 *.pdf
+
+*.txt
 .vscode/spellright.dict
