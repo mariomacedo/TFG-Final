@@ -1,4 +1,51 @@
-\chapter[Ferramenta]{Ferramenta}
+\chapter[Ferramenta]{Ferramenta Taxonopart}
 \label{cap:cap3}
 
-Neste capítulo apresentamos a ferramenta elaborada.
+\subsection{Funcionamento}
+\label{sec:funcionamento}
+A ferramenta Taxonopart foi desenvolvida como uma aplicação web, e encontra-se disponível em http://taxonopart.hopto.org.
+Ao acessar o endereço da aplicação, o usuário encontra uma breve explicação sobre o contexto do projeto em que ela foi desenvolvida,
+com sobre os tipos de visualizações disponíveis e com a explicação de cada grupo, classe e subclasse da taxonomia utilizada.
+
+\par
+Ao acessar a página Taxonomia, o usuário começa sua interação com a aplicação. Encontram-se disponíveis dois modos de visualização da taxonomia, radia e horizontal,
+respectivamente ilustrados pelas Figuras X e Y.
+
+%FIGURAS PARA TUDO?
+Para classificar uma nova ferramenta, o usuário deve clicar no botão com o  sinal de mais, no canto inferior da tela, tendo isso feito,
+o formulário para o preenchimento das informações sobre a ferramenta é exibido.
+
+\par
+O formulário foi dividido de acordo com os grupos identificados pela taxonomia (Sustentação, domínio, tecnologias e funcionalidades), sendo o único campo de preenchimento
+obrigatório, o nome da ferramenta. Para finalizar a classificação da nova ferramenta, o usuário deverá clicar no botão salvar, na última seção do formulário. 
+
+\par
+Por se tratar de uma ferramenta colaborativa, o usuário é capaz de visualizar e editar qualquer ferramenta já classificada, por outros usuários ou pela moderação. 
+Para fazer isso, o usuário pode usar o campo buscar ferramenta, localizado no canto superior esquerdo da tela, e então ao visualizar a ferramenta o botão editar estará 
+no cando superior direito da tabela com os dados de classificação da ferramenta em questão.
+
+\par
+Ao clicar em algum nó da taxonomia, em qualquer modo de visualização, é exibido um quadro com o nome da classe, sua descrição e todas as ferramentas
+com valor de classificados pela classe, ou subclasse em questão.
+
+\subsection{Tecnologias Utilizadas}
+\label{subsec:tecnologias}
+
+A aplicação foi construída utilizando a plataforma de desenvolvimento Node.js. A escolha dessa plataforma justifica-se pelo conhecimento técnico da equipe
+responsável pelo desenvolvimento da aplicação e pelo conceito fundamental da plataforma. Node.js é uma plataforma construída sobre o motor JavaScript do 
+Google Chrome para facilmente construir aplicações de rede rápidas e escaláveis. Node.js usa um modelo de I/O direcionada a evento não bloqueante que o torna leve e eficiente,
+ideal para aplicações em tempo real com grande volume de troca de dados através de dispositivos distribuídos (nodejs.org, 2018).
+
+\par
+Após análises, foi identificada a necessidade da utilização de um banco de dados orientado a documentos para a realizar a persistência dos dados da aplicação. 
+Sendo assim, a utilização do banco de dados MongoDB apresentou-se como uma escolha confiável e eficaz. 
+Por se tratar de uma ferramenta \textit{open source}, e por se integrar com a plataforma Node.js, MongoDB atendeu aos requisitos necessários para o desenvolvimento da aplicação.
+
+\par
+Para os componentes visuais da aplicação, o \textit{front-end}, a utilização do \textit{framework} responsivo Materialize (https://materializecss.com), 
+mostrou-se uma opção elegante e prática para o desenvolvimento da aplicação. Combinando o Materialize com o \textit{framework} de templates EJS (https://ejs.co), 
+foi possível desenvolver a aplicação de maneira escalável e leve.
+
+\par
+Para a implementação de ambas visualizações da taxonomia, radial e horizontal, foi utilizada a D3.js, uma biblioteca JavaScript para a manipulação de documentos 
+baseada em dados (https://d3js.org).
