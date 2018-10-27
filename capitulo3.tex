@@ -4,16 +4,16 @@ Este trabalho teve como proposta o desenvolvimento de uma aplicação web, chama
 disponibilizar um ambiente para interação com uma taxonomia para ferramentas de participação eletrônica.
 
 \par
-Para desenvolver a aplicação foi adotado o modelo de ciclo de vida incremental, descrito na seção subsequente.
+Para desenvolver a aplicação foi adotado o modelo de ciclo de vida incremental, descrito na seção seguinte.
 
-\section {Desenvolvimento}
-\label{sec:desenvolvimento}
+\section {Metodologia de Desenvolvimento da e-TAPE}
+\label{sec:Metodologia de Desenvolvimento da e-TAPE}
 \par
 Segundo \citeonline{sommerville2016software}, o modelo incremental é baseado na ideia de se desenvolver uma aplicação inicial,
 realizar a coleta de \textit{feedback} de clientes, usuários e outras pessoas envolvidas, evoluir a aplicação em versões, até que o desenvolvimento dos requisitos levantados seja realizado.
 
 \par
-Cada versão entregue da aplicação, deve incorporar novas funcionalidades para melhor atender os requisitos levantados. Geralmente, ainda segundo o autor, as primeiras funcionalidades
+Cada versão entregue da aplicação deve incorporar novas funcionalidades para melhor atender os requisitos levantados. Geralmente, ainda segundo o autor, as primeiras funcionalidades
 implementadas são escolhidas pelo grau de importância para o produto final. Esse modelo permite a avaliação da aplicação em versões iniciais de desenvolvimento, para assim saber 
 se os requisitos estão sendo entregues. A figura \ref{fig:modelo-incremental} demonstra a abstração do modelo incremental.
 
@@ -26,25 +26,21 @@ se os requisitos estão sendo entregues. A figura \ref{fig:modelo-incremental} d
 \end{figure}
 
 \par
-Para o desenvolvimento da aplicação inicial, foram realizados o levantamento dos requisitos de cliente, a modelagem das entidades e a definição das principais funcionalidades. 
-
-\par
-Passada essa primeira fase, houve o detalhamento dos requisitos de sistema, desenho do protótipo inicial e definição dos atores da aplicação.
-O documento de requisitos para a aplicação encontra-se no apêndice deste trabalho. 
+Para o desenvolvimento da aplicação, foram realizados o levantamento dos requisitos de cliente, a modelagem das entidades e a definição das principais funcionalidades. 
+Depois de detalhados os requisito, foi elaborado um protótipo e definição dos atores da aplicação. O documento de requisitos para a aplicação está no Apêndice X. 
 
 \par
 Finalizada a etapa de projeto, iniciou-se a etapa de implementação. 
 
 A aplicação foi construída utilizando a plataforma de desenvolvimento Node.js. A escolha dessa plataforma justifica-se pelo conhecimento técnico da equipe
 responsável pelo desenvolvimento da aplicação e pelo conceito fundamental da plataforma. Node.js é uma plataforma construída sobre o motor JavaScript do 
-Google Chrome para facilmente construir aplicações de rede rápidas e escaláveis. Node.js usa um modelo de I/O direcionada a evento não bloqueante que o torna leve e eficiente,
+Google Chrome para desenvolver aplicações de rede rápidas e escaláveis. Node.js usa um modelo de I/O direcionada a evento não bloqueante que o torna leve e eficiente,
 ideal para aplicações em tempo real com grande volume de troca de dados através de dispositivos distribuídos. 
 \textit{Node.js} Disponível em: <https://nodejs.org>. Acesso em 01 out. 2018.
 
 \par
 Após análises, foi identificada a necessidade da utilização de um banco de dados orientado a documentos para a realizar a persistência dos dados da aplicação. 
-Sendo assim, a utilização do banco de dados MongoDB apresentou-se como uma escolha adequada. 
-Por se tratar de uma ferramenta \textit{open source}, e por se integrar com a plataforma Node.js, MongoDB atendeu aos requisitos necessários para o desenvolvimento da aplicação.
+O SGBD MongoDB foi escolhido por se tratar de uma ferramenta \textit{open source} e por se integrar com a plataforma Node.js 
 \textit{MongoDB} Disponível em: <https://mongodb.com>. Acesso em 01 out. 2018.
 
 \par
@@ -67,11 +63,10 @@ Foi realizado um estudo sobre a análise de usabilidade da aplicação, esse est
 
 \section{Funcionamento}
 \label{sec:funcionamento}
-A ferramenta e-TAPE foi desenvolvida como uma aplicação web, e encontra-se disponível em http://taxonopart.hopto.org:3001.
-Denomina-se por usuário, a partir deste momento, qualquer pessoa acessando a aplicação. 
+A ferramenta e-TAPE foi desenvolvida como uma aplicação web está disponível em http://taxonopart.hopto.org:3001. Denomina-se por usuário, a partir deste momento, qualquer pessoa acessando a aplicação. 
 
 \par
-Ao acessar o endereço da aplicação, o usuário encontra uma breve explicação sobre o contexto do projeto ao qual ela foi desenvolvida e uma descrição da taxonomia considerando os grupos,
+Ao acessar o endereço da aplicação, o visitante encontra uma breve explicação sobre o contexto do projeto e uma descrição da taxonomia considerando os grupos,
 classes e subclasses propostas. É possível obter detalhes, sobre as classes e subclasses, clicando em seus nomes. 
 
 \par
@@ -101,9 +96,9 @@ O botão pode ser visto na Figura \ref{fig:pag-taxonomia}.
 
 \par
 Caso queira visualizar uma ferramenta já classificada, o usuário deve utilizar o campo de pesquisa, no canto superior esquerdo da tela Taxonomia.
-Conforme o usuário for digitando o nome da ferramenta, o campo sugere ferramentas pelo modo de preenchimento automático. Se o usuário escreveu o nome da ferramenta corretamente, 
-e a ferramenta já se encontrar no banco de dados da aplicação, será possível para o usuário clicar no campo com o nome da ferramenta e assim, uma tabela com a classificação da 
-ferramenta será mostrada, vide Figura \ref{fig:show-ferramenta}.
+Conforme o usuário for digitando o nome da ferramenta, o campo sugere ferramentas pelo modo de preenchimento automático. Se o usuário escreveu o nome da ferramenta corretamente 
+e a ferramenta já estiver classificada, o usuário pode visualizar uma tabela com a classificação da 
+ferramenta, vide Figura \ref{fig:show-ferramenta}.
 
 \vspace{0.5cm}
 
@@ -116,8 +111,7 @@ ferramenta será mostrada, vide Figura \ref{fig:show-ferramenta}.
 
 
 \par
-Para classificar uma nova ferramenta, o usuário deve clicar no botão com o  sinal de mais, no canto inferior da tela Taxonomia, ilustrada na Figura \ref{fig:pag-taxonomia},
-tendo feito isso, o formulário para classificação da ferramenta é exibido, conforme ilustrado na Figura \ref{fig:new-ferramenta}. 
+Para classificar uma nova ferramenta, o usuário deve clicar no botão com o  sinal de "+", no canto inferior da tela Taxonomia, ilustrada na Figura \ref{fig:pag-taxonomia}. Tendo feito isso, o formulário para classificação da ferramenta é exibido, conforme ilustrado na Figura \ref{fig:new-ferramenta}. 
 
 \begin{figure}[!ht]
     \centering
@@ -140,7 +134,7 @@ Para finalizar a classificação da nova ferramenta o usuário pode a qualquer m
 
 \par
 Por se tratar de uma ferramenta colaborativa, o usuário é capaz de visualizar e editar qualquer ferramenta já classificada por outros usuários. 
-Para fazer isso, o usuário pode usar o campo buscar ferramenta, localizado no canto superior esquerdo da tela, para após  visualizar a ferramenta clicar no botão editar, que 
+Para fazer isso, o usuário pode usar o campo buscar ferramenta, localizado no canto superior esquerdo da tela, para após visualizar a ferramenta clicar no botão editar, que 
 se encontra no cando superior direito da tabela com os dados de classificação da ferramenta em questão, com isso, os dados da ferramenta selecionada serão inseridos nos
 campos do formulário de classificação de ferramentas, previamente demonstrado pela figura \ref{fig:new-ferramenta}. 
 
