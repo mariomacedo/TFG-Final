@@ -1,22 +1,26 @@
 \chapter[Ferramenta]{Ferramenta e-TAPE}
 \label{cap:cap3}
-Este trabalho teve como proposta o desenvolvimento de uma aplicação web, chamada e-TAPE, cujo o objetivo consiste em
-disponibilizar um ambiente para edição colaborativa e evolução da taxonomia TAPE.
-
-\par
-Para desenvolver a aplicação foi adotado o modelo de ciclo de vida incremental, descrito na seção seguinte.
+Este trabalho teve como proposta o desenvolvimento de uma aplicação web, chamada e-TAPE, cujo o objetivo consiste em disponibilizar um ambiente para edição colaborativa e evolução da taxonomia TAPE.
+Para desenvolver a aplicação foi definida uma metodologia baseada no modelo de ciclo de vida incremental, descrita na seção seguinte.
 
 \section {Metodologia de Desenvolvimento da e-TAPE}
 \label{sec:desenvolvimento}
 \par
-Segundo \citeonline{sommerville2016software}, o modelo incremental é baseado na ideia de se desenvolver uma aplicação inicial,
-realizar a coleta de \textit{feedback} de clientes, usuários e outras pessoas envolvidas, evoluir a aplicação em versões, até que o desenvolvimento dos requisitos 
-levantados seja realizado.
+Segundo \citeonline{sommerville2016software}, o modelo incremental é baseado na ideia de se desenvolver uma aplicação inicial a partir do \textit{feedback} de todos os \textit{stakeholders} envolvidos e evoluir a aplicação em versões, até que os requisitos identificados estejam adequadamente atendidos na aplicação. 
 
 \par
-Primeiramente, como primeira tarefa da fase de projetos, foram definidos os atores do sistema. Para a versão inicial, foram definidos duas classes de atores, são elas: 
-atores administradores e atores visitantes. Os atores administradores não possuem limitações quanto ao acesso aos dados, podendo visualizar, atualizar, remover ou criar ferramentas,
-taxonomias e usuários. Já os usuários visitantes, podem somente, interagir com as ferramentas classificadas ou classificar novas ferramentas. 
+Em relação aos atores envolvidos, foram identificadas as seguintes classes de usuário:
+- usuário não cadastrado (visitante): consulta as informações disponibilizadas mas não têm permissão para edição. Essa edição inclui propor uma alteração na taxonomia ou classificar novas ferramentas.
+- usuário cadastrado: depois de cadastrado, o usuário autenticado pode, além de consultar as informações, propor alterações na taxonomia,  como a criação de uma nova classe, ou incluir/alterar a
+classificação de uma ferramenta. Quando um usuário autenticado propõe evolução da taxonomia, essa proposta deverá ser avaliada por um moderador. Caso o moderador concorde com a modificação,  a taxonomia é modificada. Vale destacar que na elaboração do modelo conceitual dos dados, essa possibilidade foi considerada, as versões antigas da taxonomia permanecem no banco de dados de maneira que seja armazenado
+um histórico. 
+- usuário moderador: esse usuário tem as mesmas permissões que o usuário autenticado além de poder alterar a taxonomia e validar as propostas de alterações. 
+
+\par
+Embora tenham sido identificadas as três classes de usuário descritas, nessa versão, foi considerada somente a classe de usuário visitante.
+Contudo, diferente do que foi previsto, o visitante também pode classificar e alterar a classificação de ferramenta. Essa adaptação foi necessária devido ao tempo disponível para implementação da e-TAPE
+e conclusão do trabalho. Contudo, o desenvolvimento dessas funcionalidades foi realizada de maneira que essa evolução seja facilmente implementada em versões futuras.
+
 
 \par
 Cada versão entregue da aplicação deve incorporar novas funcionalidades para melhor atender os requisitos levantados. Geralmente, ainda segundo o autor, as primeiras funcionalidades
