@@ -9,24 +9,25 @@ Para desenvolver a aplicação foi definida uma metodologia baseada no modelo de
 Segundo \citeonline{sommerville2016software}, o modelo incremental é baseado na ideia de se desenvolver uma aplicação inicial a partir do \textit{feedback} de todos os \textit{stakeholders} envolvidos e evoluir a aplicação em versões, até que os requisitos identificados estejam adequadamente atendidos na aplicação. 
 
 \par
-Em relação aos atores envolvidos, foram identificadas as seguintes classes de usuário:
-- usuário não cadastrado (visitante): consulta as informações disponibilizadas mas não têm permissão para edição. Essa edição inclui propor uma alteração na taxonomia ou classificar novas ferramentas.
-- usuário cadastrado: depois de cadastrado, o usuário autenticado pode, além de consultar as informações, propor alterações na taxonomia,  como a criação de uma nova classe, ou incluir/alterar a
-classificação de uma ferramenta. Quando um usuário autenticado propõe evolução da taxonomia, essa proposta deverá ser avaliada por um moderador. Caso o moderador concorde com a modificação,  a taxonomia é modificada. Vale destacar que na elaboração do modelo conceitual dos dados, essa possibilidade foi considerada, as versões antigas da taxonomia permanecem no banco de dados de maneira que seja armazenado
-um histórico. 
-- usuário moderador: esse usuário tem as mesmas permissões que o usuário autenticado além de poder alterar a taxonomia e validar as propostas de alterações. 
+Em relação aos atores envolvidos na aplicação, foram identificadas as seguintes classes de usuário:
+\begin{enumerate}
+    \item \textbf{Usuário não cadastrado (visitante)}: consulta as informações disponibilizadas mas não têm permissão para edição. Essa edição inclui propor uma alteração na taxonomia ou classificar novas ferramentas.
+    \item \textbf{Usuário cadastrado}: depois de cadastrado, o usuário autenticado pode, além de consultar as informações, propor alterações na taxonomia,  como a criação de uma nova classe, ou incluir/alterar a
+    classificação de uma ferramenta. Quando um usuário autenticado propõe evolução da taxonomia, essa proposta deverá ser avaliada por um moderador. Caso o moderador concorde com a modificação,  a taxonomia é modificada. Vale destacar que na elaboração do modelo conceitual dos dados, essa possibilidade foi considerada, as versões antigas da taxonomia permanecem no banco de dados de maneira que seja armazenado
+    um histórico. 
+    \item \textbf{Usuário moderador}: esse usuário tem as mesmas permissões que o usuário autenticado além de poder alterar a taxonomia e validar as propostas de alterações. 
+\end{enumerate}
 
 \par
-Embora tenham sido identificadas as três classes de usuário descritas, nessa versão, foi considerada somente a classe de usuário visitante.
-Contudo, diferente do que foi previsto, o visitante também pode classificar e alterar a classificação de ferramenta. Essa adaptação foi necessária devido ao tempo disponível para implementação da e-TAPE
-e conclusão do trabalho. Contudo, o desenvolvimento dessas funcionalidades foi realizada de maneira que essa evolução seja facilmente implementada em versões futuras.
-
+Embora tenham sido identificadas as três classes de usuário descritas, nessa versão inicial, foi considerada somente a classe de usuário visitante.
+Contudo, diferente do que foi previsto, o visitante também pode classificar e alterar a classificação de ferramenta. Essa adaptação foi necessária devido ao tempo disponível 
+para implementação da e-TAPE e conclusão do trabalho. Apesar disso, o desenvolvimento dessas funcionalidades foi realizada de maneira que essa evolução seja facilmente 
+implementada em versões futuras.
 
 \par
 Cada versão entregue da aplicação deve incorporar novas funcionalidades para melhor atender os requisitos levantados. Geralmente, ainda segundo o autor, as primeiras funcionalidades
 implementadas são escolhidas pelo grau de importância para o produto final. Esse modelo permite a avaliação da aplicação em versões iniciais de desenvolvimento, para assim saber 
 se os requisitos estão sendo entregues. A figura \ref{fig:modelo-incremental} demonstra a abstração do modelo incremental.
-
 
 \begin{figure}[!ht]
     \centering
@@ -46,29 +47,27 @@ A aplicação foi construída utilizando a plataforma de desenvolvimento Node.js
 responsável pelo desenvolvimento da aplicação e pelo conceito fundamental da plataforma. Node.js é uma plataforma construída sobre o motor JavaScript do 
 Google Chrome para desenvolver aplicações de rede rápidas e escaláveis. Node.js usa um modelo de I/O direcionada a evento não bloqueante que o torna
 ideal para aplicações em tempo real com grande volume de troca de dados através de dispositivos distribuídos. 
-\textit{Node.js} Disponível em: <https://nodejs.org>. Acesso em 01 out. 2018.
+\cite{nodejs}
 
 \par
 Após análise do modelo conceitual dos dados e das relações entre as entidades, foi identificada a necessidade da utilização de um banco de dados orientado a documentos para a 
 realizar a persistência dos dados da aplicação. 
 O \acrfull{sgbd} MongoDB foi escolhido por se tratar de uma ferramenta \textit{open source} e por se integrar com a plataforma Node.js 
-\textit{MongoDB} Disponível em: <https://mongodb.com>. Acesso em 01 out. 2018.
+\cite{mongodb}
 
 \par
-O \textit{front-end} da aplicação, foi implementado com a utilização do \textit{framework} responsivo Materialize, pois esse, 
-mostrou-se uma opção adequada para o desenvolvimento da aplicação. Combinando o Materialize com o \textit{framework} de templates EJS, 
-foi possível desenvolver a aplicação de maneira escalável e rápida. \textit{Materialize} Disponível em: <https://materializecss.com>. Acesso em 01 out. 2018.
-\textit{EJS} Disponível em: <https://ejs.co>. Acesso em 01 out. 2018.
+O \textit{front-end} da aplicação, foi implementado com a utilização do \textit{framework} responsivo Materialize \cite{materialize}, pois esse, 
+mostrou-se uma opção adequada para o desenvolvimento da aplicação. Combinando o Materialize com o \textit{framework} de templates EJS \cite{ejs}, 
+foi possível desenvolver a aplicação de maneira escalável e rápida. 
+
 
 \par
 Para a criação das visualizações da taxonomia, foram definidos dois modos de visualização, o modo radial, chamado na aplicação de e-TAPE 360º, e o modo horizontal, 
-chamado de e-TAPE Árvore. Para a implementação de ambas visualizações, foi utilizada a biblioteca D3.js, uma biblioteca JavaScript para a manipulação de documentos 
+chamado de e-TAPE Árvore. Para a implementação de ambas visualizações, foi utilizada a biblioteca D3.js \cite{d3js}, uma biblioteca JavaScript para a manipulação de documentos 
 baseada em dados, por se tratar de uma tecnologia que possibilita a visualização interativa de dados.
-\textit{D3js} Disponível em: <https://d3js.org>. Acesso em 01 out. 2018.
 
 \par
-O controle de versão da aplicação foi realizado através do sistema de controle de versão Git na plataforma GitLab, \textit{GitLab}. 
-Disponível em <https://gitlab.com>. Acesso em 01 out. 2018.
+O controle de versão da aplicação foi realizado através do sistema de controle de versão Git na plataforma GitLab, \cite{gitlab}.
 
 \section{Funcionalidades disponíveis}
 \label{sec:funcionamento}
