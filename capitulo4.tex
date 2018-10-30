@@ -11,11 +11,10 @@ O objetivo desta avaliação foi analisar a usabilidade da e-TAPE através de um
 \par
 Na primeira etapa, os participantes foram informados quanto ao objetivo do experimento e orientados sobre os procedimentos a serem seguidos de maneira que os usuários tivessem um entendimento da tarefa a ser desenvolvida. 
 A coleta de dados sobre o perfil foi realizada através de um questionário, descrito na tabela \ref{tab:questionario}. 
-O questionário original aplicado aos participantes pode ser encontrado no Anexo \ref{anexo:questionario}.
 
 \begin{table}[!ht]
     \centering
-    \caption{Dados coletados  sobre o perfil dos participantes}
+    \caption{Dados coletados sobre o perfil dos participantes}
     \label{tab:questionario}
     \begin{tabular}{l*{2}{>{\raggedright\arraybackslash}p{0.2\linewidth}}}
     \toprule
@@ -28,6 +27,7 @@ O questionário original aplicado aos participantes pode ser encontrado no Anexo
         Se respondeu sim na pergunta anterior,\\ por onde conheceu o conceito de participação eletrônica?\\
         Você costuma discutir questões sociais na internet?\\
         Se respondeu sim na pergunta anterior,\\ costuma discutir com: \\
+        a) amigos, colegas ou conhecidos b) desconhecidos c) Ambos \\ 
         Caso você discuta questões sociais na internet, qual(is) ferramentas utiliza? \\
         Você sabe o que é uma Taxonomia?\\
     \bottomrule
@@ -39,7 +39,8 @@ Após a primeira etapa, foi disponibilizada uma máquina com acesso à internet 
 disponíveis na primeira página da aplicação. 
 Após os cinco minutos, foi entregue a cada usuário duas descrições textuais sobre ferramentas de participação eletrônica. Essas descrições foram elaboradas pelos pesquisadores envolvidos na construção da TAPE que são especialistas em participação eletrônica. 
 A partir dessas descrições, cada usuário deveria classificar a ferramenta descrita usando a e-TAPE de acordo com o que achasse mais adequado.
-Essa abordagem foi adotada para que fosse possível a comparação entre a classificação elaborada por um especialista em comparação com a classificação realizada por usuários leigos. O tempo gasto para leitura das descrições textuais e classificação das ferramentas foi cronometrado e registrado. As descrições de ferramentas apresentadas aos participantes estão disponíveis no Apêndice X deste trabalho.
+Essa abordagem foi adotada para que fosse possível a comparação entre a classificação de uma ferramenta de participação feita por um especialista em comparação com a classificação por usuários leigos. O tempo gasto para leitura das descrições textuais e classificação das ferramentas foi cronometrado e registrado.
+As descrições de ferramentas apresentadas aos participantes estão disponíveis no Apêndice \ref{apendice:c} deste trabalho.
 
 \par
 Na terceira etapa, após finalizada a interação do participante com a ferramenta, o objetivo foi avaliar a usabilidade da e-TAPE.
@@ -199,10 +200,34 @@ O tempo médio dos participantes para a conclusão da classificação das duas f
 Notou-se que participantes que tinham conhecimento prévio sobre ferramentas de participação realizaram 
 as tarefas em um tempo 45\% menor se comparado ao restante da amostra, finalizando suas tarefas em 13 minutos e 17 segundos.
 
+\par 
+Outro ponto observado durante o experimento, foi o fato de conforme os usuários fossem criando seus valores para as classes da \acrshort{tape},
+os próximos usuários a utilizar a e-TAPE tendiam a fazer uso desses valores, sinalizando a maneira colaborativa de evoluir a classificação das ferramentas.
+
 \subsection{Resultados da Avaliação de Usabilidade}
 \label{subsec:resultados-sus}
-O \textit{Score SUS} da aplicação e-TAPE foi de 78,75, o que indica um valor acima da média de 68.0, relatada por \citeonline{sauro2015supr}.
+O \textit{Score SUS} da aplicação e-TAPE foi de 78,75, o que indica um valor acima da média de referência de valor 68.0, relatada por \citeonline{sauro2015supr}.
 A Tabela \ref{tab:resultado-questionario} apresenta a média de pontuação de cada item do questionário \acrshort{sus}.
+
+\par
+A Tabela \ref{tab:resultado-componentes} apresenta o resultado dos componentes de qualidade do \textit{software}. Sendo assim, analisando os critérios de qualidade propostos
+por \citeonline{nielsen199510}, foi possível chegar as seguintes conclusões:
+
+\begin{itemize}
+    \item Facilidade de aprendizagem: representada pelos itens 3, 4, 7 e 10, a média dos resultados encontrada foi de 68,75. Somente 0.75 acima da média de referência, 
+          portanto podemos concluir que há espaço para melhorar essa categoria na aplicação.
+    \item Eficiência: representada pelos itens 5, 6 e 8, obteve-se a média de 83,33. Concluindo que a aplicação e-TAPE está bem acima da média de referência
+          nessa categoria e conseguiu satisfazer os usuários no quesito eficiência.
+    \item Facilidade de memorização: diz respeito ao item 2 do questionário, ao qual obteve-se média de 65,38. Sendo assim, estando 2,62 abaixo da média, 
+          essa característica da aplicação sobe na escala de importância para as próximas versões implementadas.
+    \item Minimização dos erros: representada através do item 6, com média de 86,54, mostra-se uma boa característica da aplicação.
+    \item Satisfação: a média das questões 1, 4 e 9 resulta no componente de qualidade satisfação, com média de 66,02. 
+          Mostrou-se como outra característica que deve ser levada em consideração quando as próximas decisões de desenvolvimento forem tomadas, necessitando de melhorias nesse quesito.
+\end{itemize}
+
+\par
+Os gráficos com o resultado de cada item pode ser encontrado no Apêndice \ref{apendice:a}.
+
 
 \begin{table}[!ht]
     \centering
