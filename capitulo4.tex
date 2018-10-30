@@ -67,7 +67,7 @@ As 10 questões que compõem o questionário foram definidas por \citeonline{bro
 foram postos alternadamente, com o objetivo de evitar respostas automáticas, obrigando o respondente a se esforçar para pensar se concorda ou discorda de cada item. 
 
 \par
-O questionário \acrshort{sus} permite o cálculo de um indicador para a usabilidade geral do sistema avaliado, denominado \textit{Score SUS} . 
+O questionário \acrshort{sus} permite o cálculo de um indicador para a usabilidade geral do sistema avaliado, denominado \textit{Score SUS}, com valores entre 0 e 100. 
 \citeonline{brooke1996sus} definiu o cálculo do \textit{Score SUS} da seguinte forma:
 Para os itens 1, 3, 5, 7 e 9, será o valor assinalado pelo respondente menos 1. Para os itens 2, 4, 6, 8 e 10, será 5 menos o valor assinalado. Após isso, a soma dos valores 
 encontrados é multiplicada por 2,5, obtendo-se o \textit{Score SUS} para o sistema avaliado.
@@ -198,39 +198,52 @@ não faz parte do escopo de conhecimentos gerais de algumas pessoas.
 \end{figure}
 
 \par
-O tempo médio dos participantes para a conclusão da classificação das duas ferramentas solicitadas foi de 24 minutos e 16 segundos, o gráfico na Figura \label{fig:grafico-tempo}
-representa o tempo gasto por cada participante. Notou-se que participantes que tinham conhecimento prévio sobre ferramentas de participação realizaram 
-as tarefas em um tempo 50\% menor se comparado aqueles que não tinham esse tipo de conhecimento.
+O tempo médio dos participantes para a conclusão da classificação das duas ferramentas solicitadas foi de 24 minutos e 16 segundos. 
+Notou-se que participantes que tinham conhecimento prévio sobre ferramentas de participação realizaram 
+as tarefas em um tempo 45\% menor se comparado ao restante da amostra, finalizando suas tarefas em 13 minutos e 17 segundos.
 
-\par 
-O \textit{Score SUS} da aplicação e-TAPE foi de 78,75\%. A Tabela \ref{tab:resultado-questionario} apresenta a média de pontuação de cada item do questionário \acrshort{sus}.
+\subsection{Resultados da Avaliação de Usabilidade}
+\label{subsec:resultados-sus}
+O \textit{Score SUS} da aplicação e-TAPE foi de 78,75, o que indica um valor acima da média de 68.0, relatada por \citeonline{sauro2015supr}.
+A Tabela \ref{tab:resultado-questionario} apresenta a média de pontuação de cada item do questionário \acrshort{sus}.
+
+\par
+A Tabela \ref{tab:resultado-componentes} apresenta o resultado dos componentes de qualidade do \textit{software}. Sendo assim, analisando os critérios de qualidade propostos
+por \citeonline{nielsen199510}, foi possível chegar as seguintes conclusões:
+
+\begin{itemize}
+    \item Facilidade de aprendizagem: representada pelos itens 3, 4, 7 e 10, a média dos resultados encontrada foi de 68,75. Somente 0.75 acima da média de pontuação, portanto podemos concluir que há espaço para melhorar essa categoria na aplicação.
+    \item Eficiência: representada pelos itens 5, 6 e 8, obteve-se a média de 83,33. Concluindo que a aplicação e-TAPE está bem acima da média nessa categoria e conseguiu satisfazer os usuários no quesito eficiência.
+    \item Facilidade de memorização: diz respeito ao item 2 do questionário, ao qual obteve-se média de 65,38. Sendo assim, estando 2,62 abaixo da média, essa característica da aplicação sobe na escala de importância para as próximas versões implementadas.
+    \item Minimização dos erros: representada através do item 6, com média de 86,54, mostra-se uma boa característica da aplicação.
+    \item Satisfação: a média das questões 1, 4 e 9 resulta no componente de qualidade satisfação, com média de 66,02. Mostrou-se como outra característica que deve ser levada em consideração quando as próximas decisões de desenvolvimento forem tomadas, necessitando de melhorias nesse quesito.
+\end{itemize}
+
+\par
+Os gráficos com o resultado de cada item pode ser encontrado no Apêndice \ref{apendice:a}.
+
 
 \begin{table}[!ht]
     \centering
-    \caption{\textit{Score SUS} de cada item do questionário aplicado}
+    \caption{\textit{Score} de cada item do questionário aplicado}
     \label{tab:resultado-questionario}
     \begin{tabular}{l*{3}{>{\raggedright\arraybackslash}p{0.66\linewidth}p{0.1\linewidth}}}
     \toprule
     Nº & Questão & \textit{Score}    \\
     \midrule
-    1 & Eu gostaria de utilizar este sistema sempre que fosse pesquisar sobre ferramentas de participação eletrônica. & ::X \\
-    2 & Eu achei a aplicação desnecessariamente complexa. & ::X \\
-    3 & Eu achei a aplicação fácil de usar. & ::X \\
-    4 & Eu acho que precisaria de apoio de um suporte técnico para ser possível interagir com essa aplicação. & ::X \\
-    5 & Eu achei que as diversas funções nesta aplicação foram bem integradas.  & ::X \\
-    6 & Eu achei que houve muita inconsistência ou erros nesta aplicação.  & ::X \\
-    7 & Eu imaginaria que a maioria das pessoas, interessadas em ferramentas de participação eletrônica, aprenderia a usar essa aplicação rapidamente. & ::X \\
-    8 & Eu achei a aplicação muito complicada.  & ::X \\
-    9 & Eu me senti muito confiante quanto às interações com essa aplicação.  & ::X \\
-    10 & Eu precisei aprender muitas coisas sobre ferramentas de participação eletrônica para que eu pudesse fazer uso da aplicação. & ::X \\
+    1 & Eu gostaria de utilizar este sistema sempre que fosse pesquisar sobre ferramentas de participação eletrônica. & 76,92 \\
+    2 & Eu achei a aplicação desnecessariamente complexa. & 65,38 \\
+    3 & Eu achei a aplicação fácil de usar. & 63,46 \\
+    4 & Eu acho que precisaria de apoio de um suporte técnico para ser possível interagir com essa aplicação. & 61,54 \\
+    5 & Eu achei que as diversas funções nesta aplicação foram bem integradas.  & 82,69 \\
+    6 & Eu achei que houve muita inconsistência ou erros nesta aplicação.  & 86,54 \\
+    7 & Eu imaginaria que a maioria das pessoas, interessadas em ferramentas de participação eletrônica, aprenderia a usar essa aplicação rapidamente. & 76,29 \\
+    8 & Eu achei a aplicação muito complicada.  & 80,77 \\
+    9 & Eu me senti muito confiante quanto às interações com essa aplicação.  & 59,62 \\
+    10 & Eu precisei aprender muitas coisas sobre ferramentas de participação eletrônica para que eu pudesse fazer uso da aplicação. & 73,08 \\
     \bottomrule
     \end{tabular}
 \end{table}
-
-\par
-A Tabela \ref{tab:resultado-componentes} apresenta o resultado dos componentes de qualidade do \textit{software}. Sendo assim possível chegar a conclusão, pela metodologia aplicada, 
-que a ferramenta e-TAPE satisfaz os critérios de qualidade propostos por \citeonline{nielsen199510}, de facilidade de aprendizagem, eficiência, facilidade de memorização,
-minimização dos erros e satisfação.
 
 \begin{table}[!ht]
     \centering
@@ -240,11 +253,11 @@ minimização dos erros e satisfação.
         \toprule
             Componente de Qualidade & Valor         \\
         \midrule
-            Facilidade de aprendizagem & ::X \\
-            Eficiência & ::X \\
-            Facilidade de memorização & ::X \\
-            Minimização dos erros & ::X \\
-            Satisfação & ::X\\
+            Facilidade de aprendizagem & 68,75 \\
+            Eficiência & 83,33 \\
+            Facilidade de memorização & 65,38 \\
+            Minimização dos erros & 86,54 \\
+            Satisfação & 66,02\\
         \bottomrule
         \end{tabular}
 \end{table}
