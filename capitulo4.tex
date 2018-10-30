@@ -1,4 +1,4 @@
-\chapter[Validação e Avaliação da Ferramenta]{Validação, Avaliação da Ferramenta e Trabalhos Futuros}
+\chapter[Avaliação da Ferramenta]{Avaliação da Ferramenta}
 \label{cap:cap4}
 
 Nesse capítulo são apresentadas a metodologia utilizada para avaliação de usabilidade da ferramenta e-TAPE, assim como a a análise dos resultados obtidos.
@@ -6,11 +6,14 @@ Nesse capítulo são apresentadas a metodologia utilizada para avaliação de us
 % 1a seção do capítulo 4
 \section{Cenário da Avaliação}
 \label{sec:cenario}
-O objetivo desta avaliação foi validar a ferramenta desenvolvida com a utilização por possíveis usuários finais. Essa avaliação foi dividida em três etapas: 
-identificação do perfil dos participantes e apresentação do experimento, realização de tarefas pré-determinadas e avaliação da usabilidade da ferramenta.
+O objetivo desta avaliação foi analisar a usabilidade da ferramenta desenvolvida com a utilização por possíveis usuários finais. Essa avaliação foi dividida em três etapas,
+sendo a primeira a identificação do perfil dos participantes e apresentação do experimento, a segunda etapa consistem na realização das tarefas pré-determinadas, 
+e por último a avaliação da usabilidade da ferramenta.
 
 \par
-Na primeira etapa, os usuários participantes foram informados quanto ao objetivo do experimento, orientados sobre os procedimentos a serem seguidos. A coleta de dados sobre o perfil foi realizada através de um questionário, descrito na tabela \ref{tab:questionario}.
+Na primeira etapa, os participantes foram informados quanto ao objetivo do experimento, orientados sobre os procedimentos a serem seguidos. 
+A coleta de dados sobre o perfil foi realizada através de um questionário, descrito na tabela \ref{tab:questionario}. 
+O questionário original aplicado aos participantes pode ser encontrado no Anexo \ref{anexo:questionario}.
 
 \begin{table}[!ht]
     \centering
@@ -27,6 +30,7 @@ Na primeira etapa, os usuários participantes foram informados quanto ao objetiv
         Se respondeu sim na pergunta anterior,\\ por onde conheceu o conceito de participação eletrônica?\\
         Você costuma discutir questões sociais na internet?\\
         Se respondeu sim na pergunta anterior,\\ costuma discutir com: \\
+        Caso você discuta questões sociais na internet, qual(is) ferramentas utiliza? \\
         Você sabe o que é uma Taxonomia?\\
     \bottomrule
     \end{tabular}
@@ -41,20 +45,22 @@ Essa abordagem foi adotada para que fosse possível a comparação entre a class
 As descrições de ferramentas apresentadas aos participantes estão disponíveis no Apêndice X deste trabalho.
 
 \par
-Na terceira etapa, após finalizada a interação do usuário com a ferramenta, o objetivo foi avaliar a usabilidade da ferramenta e-TAPE.
-Para essa avaliação, foi utilizado o questionário \acrfull{sus}, desenvolvido por \citeonline{brooke1996sus}, composto de 10 questões \textit{likert}. 
-Cada questão é associada a uma escala \textit{likert} de 5 pontos, sendo o valor 1 atribuído ao discordo totalmente e o  5 atribuído ao concordo totalmente.
+Na terceira etapa, após finalizada a interação do usuário participante com a ferramenta, o objetivo foi avaliar a usabilidade da ferramenta e-TAPE.
+Para essa avaliação, foi utilizado o questionário \acrfull{sus}, desenvolvido por \citeonline{brooke1996sus}, composto de 10 itens \textit{likert}. 
+Cada item é associado a uma escala \textit{likert} de 5 pontos, sendo o valor 1 atribuído ao discordo totalmente e o  5 atribuído ao concordo totalmente.
+A figura \ref{fig:exemplo-pergunta} exemplifica um item \textit{likert}.
 
 \begin{figure}[!ht]
     \centering
     \includegraphics[scale=0.5]{./figuras/exemplo_pergunta.png}
-    \caption{Exemplo de uma questão \textit{Likert}}
+    \caption{Exemplo de um item \textit{Likert}}
     \label{fig:exemplo-pergunta}
 \end{figure}
 
 \par
-Seguindo a metodologia utilizada \citeonline{brooke1996sus}, foi solicitado aos participantes que respondessem ao questionário logo após usar a aplicação imediatamente ao término da leitura da descrição de cada item, evitando que se pensasse muito sobre a resposta. 
-Todos as questões são de preenchimento obrigatório e caso o participante não consiga responder a algum item em particular, de acordo com metodologia, dee-se solicitar que a questão seja respondida com o valor 3.  
+Seguindo a metodologia utilizada por \citeonline{brooke1996sus}, foi solicitado aos participantes que respondessem ao questionário, todos os 10 itens devem ser respondidos,
+caso o participante não saiba como responder a algum item em especial, deve-se solicitar que responda-o com o valor três, ao centro da escala. A coleta das respostas, 
+deve ser feita imediatamente ao término da leitura de cada item, evitando que se pense muito tempo sobre cada resposta, o autor alega que essa metodologia é robusta e confiável.
 
 \par
 As 10 questões que compõem o questionário foram definidas por \citeonline{brooke1996sus}, após a aplicação de um questionário sobre dois sistemas diferentes com 50 itens em potencial. Desses 50 itens, foram selecionados os 5 com os maiores valores de concordância e os outros 5 com maiores valores de discordância. Os 10 itens selecionados
@@ -67,7 +73,7 @@ Para os itens 1, 3, 5, 7 e 9, será o valor assinalado pelo respondente menos 1.
 encontrados é multiplicada por 2,5, obtendo-se o \textit{Score SUS} para o sistema avaliado.
 
 \par
-O questionário proposto no trabalho original está descrito no Anexo X e  foi adaptado ao contexto de utilização da e-TAPE de maneira que as especificidades desse domínio fossem consideradas na avaliação. O questionário utilizado está descrito na Tabela \ref{tab:questionario3}
+O questionário proposto no trabalho original está descrito no Anexo \ref{anexo:questionario} e  foi adaptado ao contexto de utilização da e-TAPE de maneira que as especificidades desse domínio fossem consideradas na avaliação. O questionário utilizado está descrito na Tabela \ref{tab:questionario3}
 
 \begin{table}[!ht]
     \centering
@@ -114,91 +120,90 @@ da seguinte forma:
 \end{table}
 
 \par 
-De acordo com os autores, para avaliar cada componente de qualidade, deve-se fazer a média dos valores encontrados durante o cálculo do \textit{Score SUS} para o grupo de perguntas em questão \cite{nielsen199510}. Os resultados encontrados foram analisado e estão descritos na Seção X. 
+De acordo com os autores, para avaliar cada componente de qualidade, deve-se fazer a média dos valores encontrados durante o cálculo do \textit{Score SUS} para o grupo de perguntas 
+em questão \cite{nielsen199510}. Os resultados encontrados foram analisado e estão descritos na Seção \ref{sec:resultados}. 
 
 \section{Resultados}
 \label{sec:resultados}
 
-Participaram X voluntários no experimento, sendo ::X\% do sexo masculino e ::X\% do sexo feminino, como apresentado no gráfico da Figura \ref{fig:grafico-sexo}. Além disso, é possível observar, pela Figura \ref{fig:grafico-idade}, que a maioria dos participantes tem entre 20 e 25 anos de idade e 
+Participaram 12 voluntários no experimento, sendo 75\% do sexo masculino e 25\% do sexo feminino, como apresentado no gráfico da Figura \ref{fig:grafico-sexo}. Além disso, 
+é possível observar, pela Figura \ref{fig:grafico-idade}, que a maioria dos participantes tem entre 21 e 25 anos de idade e 
 estão com a graduação atualmente em curso, como representado na Figura \ref{fig:grafico-grau}.
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[scale=0.3]{./figuras/grafico_placeholder.png}
+    \includegraphics[scale=0.4]{./figuras/sexo.png}
     \caption{Sexo dos participantes}
     \label{fig:grafico-sexo}
 \end{figure}
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[scale=0.3]{./figuras/grafico_placeholder.png}
+    \includegraphics[scale=0.4]{./figuras/idade.png}
     \caption{Idade dos participantes}
     \label{fig:grafico-idade}
 \end{figure}
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[scale=0.3]{./figuras/grafico_placeholder.png}
+    \includegraphics[scale=0.4]{./figuras/grau_escolaridade.png}
     \caption{Grau de escolaridade dos participantes}
     \label{fig:grafico-grau}
 \end{figure}
 
-%REVER COM MELISE
 \par
-Pôde-se perceber que a maioria das pessoas não conhecia o conceito de participação eletrônica, resultado descrito na Figura \ref{fig:grafico-participacao}. Porém grande parte dos participantes,
-::X\%, respondeu que costuma discutir questões sociais na internet. Desses ::X\% discutem com amigos, colegas e conhecidos, ::Y\% discutem com desconhecidos
-e ::Y\% discutem com ambos os casos.
-
-\par
-Esse resultado sugere que a discussão sobre questões sociais é importante para os respondentes. Essa característica dos participantes pode ser um indicativo de que a amostra considerada tem uma afinidade com o tema investigado uma vez que as ferramentas classificadas estão inseridas nesse universo da participação sendo mediada pelas TICs.
-Esses dados estão representados pelos gráficos das Figuras \ref{fig:grafico-discu} e  \ref{fig:grafico-discu-alvo}, respectivamente. 
+Pôde-se perceber que a maioria dos participantes, 91,7\%, não conhecia o conceito de participação eletrônica, resultado descrito na Figura \ref{fig:grafico-participacao}.
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[scale=0.3]{./figuras/grafico_placeholder.png}
-    \caption{Conhecimento sobre participação eletrônica dos participantes}
+    \includegraphics[scale=0.4]{./figuras/conhece_participacao_eletronica.png}
+    \caption{Conhecimento sobre o conceito de participação eletrônica dos participantes}
     \label{fig:grafico-participacao}
 \end{figure}
 
+\par
+Contudo, 58,3\% dos participantes, como observado na Figura \ref{fig:grafico-discu-alvo}, responderam que costumam discutir questões sociais na internet. 
+Desses, 80,0\% disseram que  discutem com amigos, colegas ou conhecidos, 20,0\% discutem com amigos, colegas ou conhecidos e desconhecidos, representados pela legenda ambos
+no gráfico da figura \ref{fig:grafico-discu-alvo}, ninguém respondeu que discute apenas com desconhecidos. Quando perguntados sobre quais ferramentas de participação 
+eletrônica eles utilizam para discutir esse tipo de questão, 100\% das respostas foram redes sociais. 
+
 \begin{figure}[!ht]
     \centering
-    \includegraphics[scale=0.3]{./figuras/grafico_placeholder.png}
+    \includegraphics[scale=0.4]{./figuras/discutir.png}
     \caption{Participantes que discutem questões sociais na internet}
     \label{fig:grafico-discu}
 \end{figure}
 
+\par
+Esse resultado sugere que a discussão sobre questões sociais é importante para os respondentes. Essa característica dos participantes pode ser um indicativo de que a amostra 
+considerada tem uma afinidade com o tema investigado uma vez que as ferramentas classificadas estão inseridas nesse universo da participação sendo mediada pelas \acrshort{tic}. 
+
 \begin{figure}[!ht]
     \centering
-    \includegraphics[scale=0.3]{./figuras/grafico_placeholder.png}
+    \includegraphics[scale=0.4]{./figuras/discutir_com.png}
     \caption{Pessoas com as quais os participantes que discutem questões sociais na internet interagem.}
     \label{fig:grafico-discu-alvo}
 \end{figure}
 
-%REVER COM MELISE
 \par
-Quanto a última pergunta da primeira etapa, sobre o conhecimento do conceito de Taxonomia, percebeu-se que a grande maioria ::X\%, não conhecia conforme ilustrado na Figura  \ref{fig:grafico-conhe-taxonomia}. Esse resultado pode ser um indicativo que mesmo a taxonomia sendo um modelo de classificação antigo, não faz parte do escopo de conhecimentos gerais de algumas pessoas.
+Quanto a última pergunta da primeira etapa, sobre o conhecimento do conceito de Taxonomia, percebeu-se que a grande maioria, 83,3\% não conhecia esse conceito conforme ilustrado na 
+Figura \ref{fig:grafico-conhe-taxonomia}. Esse resultado pode ser um indicativo que mesmo a taxonomia sendo um modelo de classificação antigo, 
+não faz parte do escopo de conhecimentos gerais de algumas pessoas.
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[scale=0.3]{./figuras/grafico_placeholder.png}
+    \includegraphics[scale=0.4]{./figuras/sabe_taxonomia.png}
     \caption{Conhecimento do conceito de taxonomia pelos participantes.}
     \label{fig:grafico-conhe-taxonomia}
 \end{figure}
 
 \par
-O tempo médio dos participantes para a conclusão da classificação das duas ferramentas solicitadas foi de X minutos e Y segundos, o gráfico na Figura \label{fig:grafico-tempo}
-representa o tempo gasto por cada participante. Notou-se que participantes que tinham conhecimento prévio sobre ferramentas de participação e sobre taxonomia realizaram 
-as tarefas em um tempo ::Z\% menor se comparado aqueles que não tinham esse tipo de conhecimento.
-
-\begin{figure}[!ht]
-    \centering
-    \includegraphics[scale=0.3]{./figuras/grafico_placeholder.png}
-    \caption{Conhecimento do conceito de taxonomia pelos participantes.}
-    \label{fig:grafico-tempo}
-\end{figure}
+O tempo médio dos participantes para a conclusão da classificação das duas ferramentas solicitadas foi de 24 minutos e 16 segundos, o gráfico na Figura \label{fig:grafico-tempo}
+representa o tempo gasto por cada participante. Notou-se que participantes que tinham conhecimento prévio sobre ferramentas de participação realizaram 
+as tarefas em um tempo 50\% menor se comparado aqueles que não tinham esse tipo de conhecimento.
 
 \par 
-O \textit{Score SUS} da aplicação e-TAPE foi de ::X, a Tabela \ref{tab:resultado-questionario} apresenta a média de pontuação de cada item do questionário \acrshort{sus}.
+O \textit{Score SUS} da aplicação e-TAPE foi de 78,75\%. A Tabela \ref{tab:resultado-questionario} apresenta a média de pontuação de cada item do questionário \acrshort{sus}.
 
 \begin{table}[!ht]
     \centering
@@ -243,7 +248,3 @@ minimização dos erros e satisfação.
         \bottomrule
         \end{tabular}
 \end{table}
-
-\section{Conclusão e Trabalhos Futuros}
-\label{sec:conclusao}
-
