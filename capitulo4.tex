@@ -54,7 +54,7 @@ A figura \ref{fig:exemplo-pergunta} exemplifica a escala utilizada.
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[scale=0.5]{./figuras/exemplo_pergunta.png}
+    \includegraphics[scale=0.4]{./figuras/exemplo_pergunta.png}
     \caption{Exemplo de um item \textit{Likert}}
     \label{fig:exemplo-pergunta}
 \end{figure}
@@ -68,10 +68,12 @@ deve ser feita imediatamente ao término da leitura de cada item, evitando o pro
 O questionário \acrshort{sus} permite o cálculo de um indicador para a usabilidade geral do sistema avaliado, denominado \textit{Score SUS}, com valores entre 0 e 100. 
 \citeonline{brooke1996sus} definiu o cálculo do \textit{Score SUS} da seguinte forma:
 para os itens 1, 3, 5, 7 e 9, será o valor assinalado pelo respondente menos 1; para os itens 2, 4, 6, 8 e 10, será 5 menos o valor assinalado. Após isso, a soma dos valores 
-encontrados é multiplicada por 2,5, obtendo-se o \textit{Score SUS} para o sistema avaliado.
+encontrados é multiplicada por 2,5, obtendo-se o \textit{Score SUS} para o sistema avaliado. \citeonline{sauro2015supr} chega a conclusão após um estudo feito com 500 aplicações, 
+que um \textit{Score SUS} acima de 68.0 deve ser considerado acima da média.
 
 \par
-O questionário proposto no trabalho original está descrito no Anexo \ref{anexo:questionario} e  foi adaptado ao contexto de utilização da e-TAPE de maneira que as especificidades desse domínio fossem consideradas na avaliação. O questionário utilizado está descrito na Tabela \ref{tab:questionario3}
+O questionário proposto no trabalho original está descrito no Anexo \ref{anexo:questionario}, ele foi adaptado ao contexto de utilização da e-TAPE de maneira que as especificidades desse domínio fossem consideradas na avaliação. 
+O questionário utilizado está descrito pela Tabela \ref{tab:questionario3}.
 
 \begin{table}[!ht]
     \centering
@@ -119,7 +121,7 @@ da seguinte forma:
 
 \par 
 De acordo com os autores, para avaliar cada componente de qualidade, deve-se fazer a média dos valores encontrados durante o cálculo do \textit{Score SUS} para o grupo de perguntas 
-em questão \cite{nielsen199510}. Os resultados encontrados foram analisado e estão descritos na Seção \ref{sec:resultados}. 
+em questão \cite{nielsen199510}. Os resultados encontrados foram analisados e estão descritos na Seção \ref{sec:resultados}. 
 
 \section{Resultados}
 \label{sec:resultados}
@@ -161,7 +163,7 @@ Pôde-se perceber que a maioria dos participantes, 91,7\%, não conhecia o conce
 
 \par
 Contudo, 58,3\% dos participantes responderam que costumam discutir questões sociais na internet (Figura \ref{fig:grafico-discu-alvo}). 
-Desses, 80,0\% disseram que  discutem com amigos, colegas ou conhecidos, 20,0\% discutem com amigos, colegas ou conhecidos e desconhecidos, representados pela legenda ambos
+Desses, 80,0\% disseram que  discutem com amigos, colegas ou conhecidos, 20,0\%  responderam que discutem com ambos amigos, colegas ou conhecidos e desconhecidos, representado
 no gráfico da figura \ref{fig:grafico-discu-alvo}, ninguém respondeu que discute apenas com desconhecidos. Quando perguntados sobre quais ferramentas de participação 
 eletrônica eles utilizam para discutir esse tipo de questão, 100\% das respostas foram redes sociais. 
 
@@ -172,21 +174,17 @@ eletrônica eles utilizam para discutir esse tipo de questão, 100\% das respost
     \label{fig:grafico-discu}
 \end{figure}
 
-\par
-Esse resultado sugere que a discussão sobre questões sociais é importante para os respondentes. Essa característica pode ser um indicativo de que a amostra 
-considerada tem uma afinidade com o tema investigado uma vez que as ferramentas classificadas estão inseridas nesse universo da participação sendo mediada pelas \acrshort{tic}. 
-
 \begin{figure}[!ht]
     \centering
     \includegraphics[scale=0.4]{./figuras/discutir_com.png}
-    \caption{Pessoas com as quais os participantes que discutem questões sociais na internet interagem.}
+    \caption{Grau de proximidade das pessoas que os participantes discutem questões sociais na internet.}
     \label{fig:grafico-discu-alvo}
 \end{figure}
 
 \par
-Quanto a última pergunta da primeira etapa, sobre o conhecimento do conceito de Taxonomia, percebeu-se que a grande maioria, 83,3\% não conhecia esse conceito conforme ilustrado na 
-Figura \ref{fig:grafico-conhe-taxonomia}. Esse resultado pode ser um indicativo que mesmo a taxonomia sendo um modelo de classificação antigo, 
-não faz parte do escopo de conhecimentos gerais de algumas pessoas.
+Quanto a última pergunta da primeira etapa, sobre o conhecimento do conceito de Taxonomia, percebeu-se que a grande maioria, 83,3\% não conhecia esse conceito conforme ilustra 
+o gráfico na Figura \ref{fig:grafico-conhe-taxonomia}. Esse resultado pode ser um indicativo que mesmo a taxonomia sendo um modelo de classificação antigo e utilizado por diversas 
+áreas do conhecimento, saber sua função, não faz parte do conjunto de conhecimento intrínseco das pessoas.
 
 \begin{figure}[!ht]
     \centering
@@ -194,6 +192,22 @@ não faz parte do escopo de conhecimentos gerais de algumas pessoas.
     \caption{Conhecimento do conceito de taxonomia pelos participantes.}
     \label{fig:grafico-conhe-taxonomia}
 \end{figure}
+
+\par 
+Ao final do questionário, foi disponibilizado um espaço, de preenchimento opcional, para  inserção de comentários sobre a aplicação. Ao total, 
+4 comentários foram deixados pelos participantes, expostos na Figura \ref{fig:coments}.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[scale=0.5]{./figuras/coments.png}
+    \caption{Comentários dos participantes.}
+    \label{fig:coments}
+\end{figure}
+
+\par
+Observa-se pelos comentários características que foram retratadas pelos componentes de qualidade de software, demostrados mais a frente na Tabela \ref{tab:resultado-componentes}.
+Pela sugestão feita pelo participante dono do terceiro comentário, cria-se a possibilidade de um requisito de alteração do modo de interação com a e-TAPE, alternando entre um
+modo para especialistas e outro para leigos sobre o assunto.
 
 \par
 O tempo médio dos participantes para a conclusão da classificação das duas ferramentas solicitadas foi de 24 minutos e 16 segundos. 
@@ -206,28 +220,9 @@ os próximos usuários a utilizar a e-TAPE tendiam a fazer uso desses valores, s
 
 \subsection{Resultados da Avaliação de Usabilidade}
 \label{subsec:resultados-sus}
-O \textit{Score SUS} da aplicação e-TAPE foi de 78,75, o que indica um valor acima da média de referência de valor 68.0, relatada por \citeonline{sauro2015supr}.
+A aplicação e-TAPE, obteve um \textit{Score SUS} de 78,75. Um valor acima da média de referência de valor 68.0, relatada por \citeonline{sauro2015supr}.
 A Tabela \ref{tab:resultado-questionario} apresenta a média de pontuação de cada item do questionário \acrshort{sus}.
-
-\par
-A Tabela \ref{tab:resultado-componentes} apresenta o resultado dos componentes de qualidade do \textit{software}. Sendo assim, analisando os critérios de qualidade propostos
-por \citeonline{nielsen199510}, foi possível chegar as seguintes conclusões:
-
-\begin{itemize}
-    \item Facilidade de aprendizagem: representada pelos itens 3, 4, 7 e 10, a média dos resultados encontrada foi de 68,75. Somente 0.75 acima da média de referência, 
-          portanto podemos concluir que há espaço para melhorar essa categoria na aplicação.
-    \item Eficiência: representada pelos itens 5, 6 e 8, obteve-se a média de 83,33. Concluindo que a aplicação e-TAPE está bem acima da média de referência
-          nessa categoria e conseguiu satisfazer os usuários no quesito eficiência.
-    \item Facilidade de memorização: diz respeito ao item 2 do questionário, ao qual obteve-se média de 65,38. Sendo assim, estando 2,62 abaixo da média, 
-          essa característica da aplicação sobe na escala de importância para as próximas versões implementadas.
-    \item Minimização dos erros: representada através do item 6, com média de 86,54, mostra-se uma boa característica da aplicação.
-    \item Satisfação: a média das questões 1, 4 e 9 resulta no componente de qualidade satisfação, com média de 66,02. 
-          Mostrou-se como outra característica que deve ser levada em consideração quando as próximas decisões de desenvolvimento forem tomadas, necessitando de melhorias nesse quesito.
-\end{itemize}
-
-\par
-Os gráficos com o resultado de cada item pode ser encontrado no Apêndice \ref{apendice:a}.
-
+Os gráficos com o resultado das respostas obtidas por cada item podem ser encontrado no Apêndice \ref{apendice:a}.
 
 \begin{table}[!ht]
     \centering
@@ -252,13 +247,22 @@ Os gráficos com o resultado de cada item pode ser encontrado no Apêndice \ref{
 \end{table}
 
 \par
+Para realizar uma análise sobre os \textit{scores} obtidos pela e-TAPE, deve-se levar em consideração que, pela metodologia aplicada por \citeonline{brooke1996sus}, 
+um valor próximo de 100 é uma avaliação favorável a aplicação. Sendo assim, o item melhor avaliado pelos participantes foi o item \textit{6 - Eu achei que houve muita inconsistência 
+ou erros nesta aplicação.}, com uma média de 86,54, mostrando que, na verdade, os participantes não encontraram muita inconsistência ou erros na aplicação.
 
+Por outro lado, o item com o menor \textit{score}, foi o item \textit{9 - Eu me senti muito confiante quanto às interações com essa aplicação}, com valor de 59,62.
+Levado em consideração o perfil dos participantes do estudo, onde 91.70\% responderam que não conhecem o conceito de participação eletrônica,
+e 83,33\% responderam não saber o que é uma taxonomia, compreende-se esse valor obtido, como um indicativo de criação de uma seção na aplicação onde deve-se conter textos, 
+vídeos e/ou tutoriais sobre o contexto participação eletrônica, para que então, a familiaridade com o assunto aumente a confiança do usuário ao interagir com o sistema.
 
-A Tabela \ref{tab:resultado-componentes} apresenta o resultado dos componentes de qualidade do \textit{software}. 
 \par
+A Tabela \ref{tab:resultado-componentes} apresenta o resultado dos componentes de qualidade do \textit{software}, analisando os critérios de qualidade propostos
+por \citeonline{nielsen199510}.
+
 \begin{table}[!ht]
     \centering
-    \caption{Valor encontrado para cada componente de avaliação da qualidade da ferramenta e-TAPE}
+    \caption{Valor dos componente de avaliação da qualidade da ferramenta e-TAPE}
     \label{tab:resultado-componentes}
     \begin{tabular}{l*{2}{>{\raggedright\arraybackslash}p{0.1\linewidth}}}
         \toprule
@@ -272,21 +276,32 @@ A Tabela \ref{tab:resultado-componentes} apresenta o resultado dos componentes d
         \bottomrule
         \end{tabular}
 \end{table}
-\par
-Sendo assim, analisando os critérios de qualidade propostos por \citeonline{nielsen199510}, foi possível chegar às seguintes conclusões:
-\par
 
+O preceito válido para os itens em individual, é também aplicado aos componentes de qualidade do \textit{software}, onde quanto mais próximo ao valor 100, 
+melhor é o resultado do componente.
+Após análise dos valores, conclui-se:
 \begin{itemize}
-    \item Facilidade de aprendizagem: representada pelos itens 3, 4, 7 e 10. A média obtida foi 68,75. Somente 0.75 acima do valor de referência, o que sugere uma necessidade de se investigar estratégias facilitar a assimilação do fluxo das funcionalidades implementadas. 
-    \item Eficiência: representada pelos itens 5, 6 e 8, obteve-se a média de 83,33. Apesar de alguma dificuldade de aprendizado demonstrada pelos usuários ao responder a componente anterior, os resultados desse item sugerem que depois de aprender a usar, a produtividade na execução das tarefas aumentou ;
-    \item Facilidade de memorização: diz respeito ao item 2 do questionário, média obtida foi 65,38. Essa componente indica a facilidade de memorização da aplicação quando os usuários ficam algum tempo sem utilizá-la, na pergunta 2, o participante avalia a complexidade da aplicação. Uma aplicação demasiadamente complexa pode ser mais difícil de ser memorizada. Portanto, considerando a média obtida abaixo do valor de referência, pode-se concluir que as funcionalidades da forma como foram desenvolvidas apresentam alguns obstáculos. Esse resultado corrobora com o resultado obtido na componente Facilidade de Aprendizado.
-    \item Minimização dos erros: representada através do item 6, com média de 86,54. Para essa componente, o resultado indica que a ocorrência de erros não foi considerada um problema crítico. 
-    \item Satisfação: a média das questões 1, 4 e 9 resulta no componente de qualidade satisfação, com média de 66,02. Essa componente avalia a satisfação do usuário em utilizar a ferramenta. O valor abaixo da média é um indicativo de que é necessário um esforço para tornar o ambiente de utilização da e-TAPE um pouco mais agradável.
+    \item \textbf{Facilidade de aprendizagem}: representada pelos itens 3, 4, 7 e 10, a média dos resultados obtidos foi de 68,75. Um valor 0.75 acima da média, 
+          chegando a conclusão que, mesmo a aplicação e-TAPE encontrando-se em um estágio inicial, mostra-se uma aplicação capaz de ser utilizada pelos usuários de maneira fácil.
+
+    \item \textbf{Eficiência}: representada pelos itens 5, 6 e 8, obteve-se a média de 83,33. Concluindo-se que a aplicação e-TAPE está bem acima da média de referência
+          nessa categoria e consegue satisfazer seus usuários quanto à eficiência das ações tomadas ao interagir com a aplicação. Esse valor pode ser correlacionado com o valor
+          obtido pelo componente minimização de erros.
+
+    \item \textbf{Facilidade de memorização}: diz respeito ao item 2 do questionário, com média de 65,38. Um valor 2,62 abaixo da média, 
+          reforçando o ponto levantado anteriormente, da necessidade de uma área na aplicação, onde o usuário possa aprender mais sobre os conceitos abordados e também sobre 
+          a aplicação em si. O valor obtido por esse componente, desencadeou requisitos quanto a tutorais de interação com a ferramente.
+
+    \item \textbf{Minimização dos erros}: representada através do item 6, com média de 86,54, mostra-se como a melhor característica da aplicação, segundo os participantes. 
+          Se correlacionado com o valor do componente eficiência, mostra que a aplicação conseguiu gerar uma resposta positiva dos participantes em componentes considerados importantes
+          pelo criador da metodologia aplicada.
+
+    \item \textbf{Satisfação}: a média das questões 1, 4 e 9 resulta no componente de qualidade satisfação, com valor obtido de 66,02. 
+          Mostrou-se como uma característica que deve ser levada em consideração quanto as próximas decisões de desenvolvimento. Mesmo estando abaixo da média, é um valor que não
+          mostra que houve uma insatisfação dos usuários. 
+
 \end{itemize}
 
 \par
-Os gráficos com o resultado de cada item pode ser encontrado no Apêndice \ref{apendice:a}.
-
-
-
-
+Diante dos resultados apresentados, pode-se afirmar que a aplicação e-TAPE conseguiu uma boa avaliação de usabilidade. E apesar de ser o objetivo final desta monografia, 
+não terá seu desenvolvimento interrompido ao final dos procedimentos deste trabalho. O capítulo \ref{cap:cap5} retrata o futuro da aplicação.  

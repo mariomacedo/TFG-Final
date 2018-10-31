@@ -1,11 +1,12 @@
 \chapter[Revisão Bibliográfica]{Revisão Bibliográfica} 
 \label{cap:cap2}
-%Eu acho que você quis associar o conceito de participação com governança e transparência, acho essa abordagem muito legal. 
-%Mas acho que falta você trabalhar um pouco mais essa relação. Pensa que deve existir uma coerência nessa discussão:
-%minha sugestão é que você desenvolva melhor o texto seguindo esse caminho: governança digital->transparência->participação
-
 % Introdução do capítulo
-Neste capítulo serão discutidos alguns aspectos teóricos necessários para uma boa compreensão do desenvolvimento deste trabalho.
+Neste capítulo são discutidos alguns aspectos teóricos necessários para uma boa compreensão do desenvolvimento deste trabalho. A abordagem dá-se da seguinte forma:
+primeiramente na seção \ref{sec:e-part}, é discutido o conceito de governança digital e como esse novo paradigma de governo incentiva a evolução das ferramentas de 
+participação eletrônica. Sendo assim, na seção \ref{sec:e-part tools}, é explanado como os atuais incentivos têm colaborado para a criação de novas ferramentas de 
+participação eletrônica. Já na seção \ref{sec:taxonomia}, o conceito de taxonomia é apresentado, junto a exemplos clássicos e atuais. Por último, mas não menos importante, 
+na seção \ref{sec:e-part tools}, é apresentada a taxonomia utilizada como base para a aplicação desenvolvida no contexto deste projeto. 
+
 
 % 1a seção do capítulo 1
 \section{Participação Eletrônica e Governança Digital}
@@ -53,7 +54,7 @@ tem que se dar de uma maneira mais ativa \cite{bovaird2007beyond}. Um exemplo de
 \par
 Serenata de Amor é um projeto aberto com o objetivo de aumentar a fiscalização dos gastos públicos, compartilhando-os de maneira clara e acessível para a sociedade. O projeto utiliza
 aprendizado de máquina para fiscalizar os reembolsos efetuados pela \acrfull{ceap} - verba que custeia alimentação, transporte, hospedagem e até despesas com cultura e 
-assinaturas de TV dos parlamentares brasileiros. \textit{Serenata de Amor}. Disponível em: <https://serenata.ai/>. Acesso em 03 out. 2018.
+assinaturas de TV dos parlamentares brasileiros \cite{serenata}. 
 
 
 \par
@@ -63,9 +64,11 @@ sociedade e do indivíduo em particular.  Neste contexto, surge o conceito de Pa
 a fim de ampliar e aprofundar a participação política para que cidadãos sejam capazes de se conectar uns aos outros e aos seus representantes eleitos. 
 
 \par 
-De acordo com \cite{medeiros2009novos}, o uso das ferramentas de participação eletrônica tem se disseminado e vem sendo aplicado a diversos objetivos e ambientes. \citeonline{dal2015ferramentas}, por exemplo, mostra em sua pesquisa exploratória sobre inciativas destinadas à participação civil
+De acordo com \cite{medeiros2009novos}, o uso das ferramentas de participação eletrônica tem se disseminado e vem sendo aplicado a diversos objetivos e ambientes. 
+\citeonline{dal2015ferramentas}, por exemplo, mostra em sua pesquisa exploratória sobre inciativas destinadas à participação civil
 pela internet, casos de uso de ferramentas de participação eletrônica em Barcelona, Lisboa, São Paulo, Nova Iorque e Porto Alegre. A autora chega a conclusão 
-que o uso de ferramentas de participação eletrônica por governos é um "caminho sem volta".%TODO: Citar artigo
+que o uso de ferramentas de participação eletrônica por governos é um "caminho sem volta". Caso parecido foi relatado pelo estudo de \citeonline{tape2019mota}, onde 40 ferramentas
+de participação eletrônica foram identificadas pelos autores. 
 
 \par
 Entretanto, a sociedade civil ainda não tem se engajado plenamente ao uso desses recursos. Para exemplificar, temas de grande interesse popular 
@@ -74,30 +77,22 @@ para o desenvolvimento do país. Portanto, é razoável esperar que que os cidad
 Contudo, a ferramenta de participação eletrônica Wikilegis, desenvolvida pela câmara dos deputados do Brasil, disponibilizada em um ambiente virtual onde a sociedade civil pode analisar
  os projetos de leis e contribuir com sugestões para redação aos artigos ou parágrafos, apresenta uma quantidade inexpressiva de sugestões para os projetos de reformas. 
  São 221 sugestões para a reforma da previdência, 129 sugestões para a reforma tributária e  50 sugestões para a reforma trabalhista.  Os números mostram a dificuldade de engajar 
- a sociedade civil em assuntos políticos mais complexos e que demandam tempo e estudo. \textit{Wikilegis}. Disponível em <https://edemocracia.camara.leg.br>. Acesso em 10 out 2018. 
+ a sociedade civil em assuntos políticos mais complexos e que demandam tempo e estudo \cite{wikilegis}. 
 
 \par
 Por outro lado, durante a pesquisa, foi possível encontrar casos onde o engajamento dos cidadãos foi maior. Por exemplo, o site Vote na web disponibiliza um painel, onde são mostrados projetos de leis, 
 seus propositores e componentes gráficos para representar a votação dos cidadãos.
 Assim, o cidadão pode comparar sua intenção de voto com as dos demais cidadãos e com os votos efetivados pelos representantes, além de contar com a descrição dos votos por gênero,
-região e idade. Os projetos têm em média sete mil votos, onde o mais votado conta com cerca de quase quinze mil votos. \textit{Vote na Web}. Disponível em <http://www.votenaweb.com.br/>.
-Acesso em 10 out 2018.
+região e idade. Os projetos têm em média sete mil votos, onde o mais votado conta com cerca de quase quinze mil votos \cite{votenaweb}.
 
 \par
 Isso indica que o engajamento da sociedade civil organizada tem um amplo espaço de crescimento \cite{o2011government}, fica o desafio aos atores, sociedade civil, governantes, 
 empresas e indivíduos, a criação de ferramentas de participação eletrônica que estimulem o engajamento do cidadão.
 
-
-%=====================================================================================================================================================================================================
-% FERRAMENTAS DE PARTICIPAÇÃO ELETRÔNICA
-%=====================================================================================================================================================================================================
-
 \section{Ferramentas de Participação Eletrônica}
 \label{sec:e-part tools}
 Devido aos incentivos gerados por esses novos paradigmas de tomada de decisões participativas, muitas ferramentas de participação eletrônica têm sido desenvolvidas,
 tanto por governos e governantes, quanto pela sociedade civil organizada. Alguns exemplos de ferramentas de participação eletrônica identificados podem ser encontrados na Tabela \ref{tab:ferramentas}.
-
-\vspace{1cm}
 
 \begin{table}[!ht]
     \centering
@@ -170,10 +165,6 @@ Diante deste cenário, onde o uso de ferramentas de participação eletrônica e
 classificação de ferramentas de participação eletrônica de maneira colaborativa representa uma possibilidade de elaboração de um instrumento que facilite a compreensão e, 
 por consequência, a utilização efetiva dessas ferramentas. 
 
-%Livro original do Lineu em LATIN => https://ia800503.us.archive.org/8/items/mobot31753000798865/mobot31753000798865.pdf
-%Em Inglês => http://lib1.org/_ads/2AF4FEC3E909EC17EFE5EA7FDA9071E5
-%==================================================================================================================================================================================================
-
 \section{Taxonomia}
 \label{sec:taxonomia}
 Com o objetivo de apresentar um panorama conceitual sobre o termo taxonomia e contextualizar o assunto, \citeonline{novo2007elaboraccao} diz que o conceito de taxonomia
@@ -224,8 +215,6 @@ de acordo com os nós F e C, por exemplo.
 \label{fig:exemploTaxonomia}  
 \end{figure}
 
-%==================================================================================================================================================================================================
-
 \par
 Durante a pesquisa, a revisão da literatura permitiu identificar alguns estudos e ações no sentido de tentar elaborar classificações para as ferramentas de participação.
 Um exemplo é o projeto \textit{Civic Tech Field Guide} que, atualmente, está em um estágio inicial, sendo o único modo de colaboração o preenchimento de um formulário online. 
@@ -273,9 +262,8 @@ e a taxonomia apresentada por \citeonline{avizienis2004basic}, que define concei
 e então personalizar o algoritmo de busca para indicar as necessidades específicas desse usuário. Vale ressaltar a grande utilização da taxonomia por lojas virtuais,
 encontrada por \cite{sondhi2018taxonomy}.
 
-%==================================================================================================================================================================================================
 \section{Taxonomia para Ferramentas de Participação Eletrônica}
-\label{subsec:taxonomia e-part tools}
+\label{sec:taxonomia e-part tools}
 
 \par
 A taxonomia utilizada como base para construção da ferramenta foi desenvolvida por \citeonline{tape2019mota}, no contexto do projeto Vispublica, e é denominada pelos autores como TAPE. 
@@ -307,8 +295,9 @@ Na Figura \ref{fig:grupo-sustentacao} é possível observar, isoladamente, a hie
     \label{fig:grupo-sustentacao}
 \end{figure}
 
+\newpage
 \par
-As definições das classe e subclasse desse grupo são representadas e descritas na Tabela \ref{tab:classesSustentacao}.
+As classes e subclasse desse grupo são representadas  na Tabela \ref{tab:classesSustentacao}.
 
 \begin{table}[!ht]
     \centering
@@ -327,7 +316,6 @@ As definições das classe e subclasse desse grupo são representadas e descrita
     \end{tabular}
 \end{table}
 
-%========================================================================================================================================================================================
 \subsection{Domínio}
 \label{subsubsec:dominio}
 O grupo domínio tem o objetivo de considerar características do ambiente em que a ferramenta está inserida. 
@@ -341,7 +329,7 @@ A figura \ref{fig:grupo-dominio} representa as hierarquias definidas para o grup
 \end{figure}
 
 \par
-As definições das classe e subclasse desse grupo são representadas e descritas na Tabela \ref{tab:classesDominio}.
+As classes e subclasse desse grupo são representadas  na Tabela \ref{tab:classesDominio}.
 
 \begin{table}[!ht]
     \centering
@@ -375,7 +363,7 @@ A figura \ref{fig:grupo-tecnologias} representa as hierarquias definidas para o 
 \end{figure}
 
 \par
-As definições das classe e subclasse desse grupo são representadas e descritas na Tabela \ref{tab:classesTecnologias}.
+As classes e subclasse desse grupo são representadas  na Tabela \ref{tab:classesTecnologias}.
 
 \begin{table}[!ht]
     \centering
@@ -411,7 +399,7 @@ A hierarquia proposta para o grupo Tecnologias está representada na figura \ref
 \end{figure}
 
 \par
-As definições das classe e subclasse desse grupo são representadas e descritas na Tabela \ref{tab:classesFuncionalidades}.
+As classes e subclasse desse grupo são representadas  na Tabela \ref{tab:classesFuncionalidades}.
 
 \begin{table}[!ht]
     \centering
