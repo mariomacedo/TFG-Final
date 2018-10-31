@@ -36,41 +36,8 @@ se os requisitos estão sendo entregues. A figura \ref{fig:modelo-incremental} d
 \end{figure}
 
 \par
-Para o desenvolvimento da aplicação, foram realizados o levantamento dos requisitos de cliente e a modelagem conceitual dos dados.
-Depois de detalhados os requisito, foi elaborado um protótipo e definição dos atores da aplicação. O lista de requisitos para a aplicação está no Apêndice \ref{apendice:b} deste trabalho. 
-
-\par
-Finalizada a etapa de projeto, iniciou-se a etapa de implementação. 
-
-A aplicação foi construída utilizando a plataforma de desenvolvimento Node.js. A escolha dessa plataforma justifica-se pelo conhecimento técnico da equipe
-responsável pelo desenvolvimento da aplicação e pelo conceito fundamental da plataforma. Node.js é uma plataforma construída sobre o motor JavaScript do 
-Google Chrome para desenvolver aplicações de rede rápidas e escaláveis. Node.js usa um modelo de I/O direcionada a evento não bloqueante que o torna
-ideal para aplicações em tempo real com grande volume de troca de dados através de dispositivos distribuídos. 
-\cite{nodejs}
-
-\par
-Após análise do modelo conceitual dos dados e das relações entre as entidades, foi identificada a necessidade da utilização de um banco de dados orientado a documentos para a 
-realizar a persistência dos dados da aplicação. 
-O \acrfull{sgbd} MongoDB foi escolhido por se tratar de uma ferramenta \textit{open source} e por se integrar com a plataforma Node.js 
-\cite{mongodb}
-
-\par
-O \textit{front-end} da aplicação, foi implementado com a utilização do \textit{framework} responsivo Materialize \cite{materialize}, pois esse, 
-mostrou-se uma opção adequada para o desenvolvimento da aplicação. Combinando o Materialize com o \textit{framework} de templates EJS \cite{ejs}, 
-foi possível desenvolver a aplicação de maneira escalável e rápida. 
-
-
-\par
-Para a criação das visualizações da taxonomia, foram definidos dois modos de visualização, o modo radial, chamado na aplicação de e-TAPE 360º, e o modo horizontal, 
-chamado de e-TAPE Árvore. Para a implementação de ambas visualizações, foi utilizada a biblioteca D3.js \cite{d3js}, uma biblioteca JavaScript para a manipulação de documentos 
-baseada em dados, por se tratar de uma tecnologia que possibilita a visualização interativa de dados.
-
-\par
-O controle de versão da aplicação foi realizado através do sistema de controle de versão Git na plataforma GitLab, \cite{gitlab}.
-
-\section{Funcionalidades disponíveis}
-\label{sec:funcionamento}
-A ferramenta e-TAPE foi desenvolvida como uma aplicação web está disponível em http://taxonopart.hopto.org:3001.
+Para o desenvolvimento da aplicação, foram realizados o levantamento dos requisitos de cliente e a modelagem conceitual dos dados. A lista de requisitos simplificada está no Apêndice \ref{apendice:b}. 
+Depois de detalhados os requisitos, foi construído um protótipo que foi validado pelos pesquisadores envolvidos na elaboração da TAPE. A ferramenta e-TAPE está disponível em http://taxonopart.hopto.org:3001.
 
 \par
 Ao acessar o endereço da aplicação, o usuário visitante encontra uma breve explicação sobre o contexto do projeto e uma descrição da taxonomia considerando os grupos,
@@ -141,7 +108,7 @@ Para fazer isso, após visualizar a ferramenta, basta clicar no botão editar, q
 
 \par
 Caso o usuário visitante queria saber a definição de uma classe, duas opções estão disponíveis, parar o mouse em cima de algum nó da taxonomia, em qualquer modo de visualização, 
-ou clicar no nó desejado. Para a primeira opção é exibido um \textit{tooltip} com a definição do nó. Já para a segunda opção, é exibido um quadro com o nome da classe, descrição e 
+ou clicar no nó desejado. Para a primeira opção, é exibido um \textit{tooltip} com a definição do nó. Já para a segunda opção, é exibido um quadro com o nome da classe, descrição e 
 uma lista com ferramentas classificadas e o valor ou as subclasses. A figura \ref{fig:tabela-ferramentas} demonstra essa segunda opção. 
 
 \begin{figure}[!ht]
@@ -151,3 +118,27 @@ uma lista com ferramentas classificadas e o valor ou as subclasses. A figura \re
     \label{fig:tabela-ferramentas}
 \end{figure}
 \par
+
+
+A aplicação foi construída utilizando a plataforma de desenvolvimento Node.js. A escolha dessa plataforma justifica-se pelo conhecimento técnico da equipe
+responsável pelo desenvolvimento da aplicação e pelo conceito fundamental da plataforma. Node.js é uma plataforma construída sobre o motor JavaScript do 
+Google Chrome para desenvolver aplicações de rede escaláveis. Node.js usa um modelo de I/O direcionada a evento não bloqueante que o torna
+apropriado para aplicações em tempo real com grande volume de troca de dados através de dispositivos distribuídos. 
+\cite{nodejs}
+
+\par
+Após análise do modelo conceitual dos dados e das relações entre as entidades, foi identificada a necessidade da utilização de um banco de dados orientado a documentos para a 
+persistência dos dados da aplicação. 
+O \acrfull{sgbd} MongoDB foi escolhido por se tratar de uma ferramenta \textit{open source} e por permitir a integração com a plataforma Node.js 
+\cite{mongodb}
+
+\par
+O \textit{front-end} da aplicação foi implementado com a utilização do \textit{framework} responsivo Materialize \cite{materialize}, pois esse mostrou-se uma opção adequada para o desenvolvimento da aplicação. Combinando o Materialize com o \textit{framework} de templates EJS \cite{ejs}, 
+foi possível desenvolver a aplicação de maneira escalável e rápida. 
+
+
+\par
+Para a criação das visualizações da taxonomia, foram definidos dois modos de visualização, o modo radial, chamado na aplicação de e-TAPE 360º, e o modo horizontal, 
+chamado de e-TAPE Árvore. Para a implementação de ambas visualizações, foi utilizada a biblioteca D3.js \cite{d3js}, uma biblioteca JavaScript para a manipulação de documentos 
+baseada em dados que permite a visualização interativa de dados. 
+O controle de versão da aplicação foi realizado através do sistema de controle de versão Git na plataforma GitLab, \cite{gitlab}.
