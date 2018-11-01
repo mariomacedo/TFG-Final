@@ -10,13 +10,13 @@ Segundo \citeonline{sommerville2016software}, o modelo incremental é baseado na
 
 \par
 Em relação aos atores envolvidos na aplicação, foram identificadas as seguintes classes de usuário:
-\begin{enumerate}
+\begin{itemize}
     \item \textbf{Usuário não cadastrado (visitante)}: consulta as informações disponibilizadas mas não têm permissão para edição. Essa edição inclui propor uma alteração na taxonomia ou classificar novas ferramentas.
     \item \textbf{Usuário cadastrado}: depois de cadastrado, o usuário autenticado pode, além de consultar as informações, propor alterações na taxonomia,  como a criação de uma nova classe, ou incluir/alterar a
     classificação de uma ferramenta. Quando um usuário autenticado propõe evolução da taxonomia, essa proposta deverá ser avaliada por um moderador. Caso o moderador concorde com a modificação,  a taxonomia é modificada. Vale destacar que na elaboração do modelo conceitual dos dados, essa possibilidade foi considerada, as versões antigas da taxonomia permanecem no banco de dados de maneira que seja armazenado
     um histórico. 
     \item \textbf{Usuário moderador}: esse usuário tem as mesmas permissões que o usuário autenticado além de poder alterar a taxonomia e validar as propostas de alterações. 
-\end{enumerate}
+\end{itemize}
 
 \par
 Embora tenham sido identificadas as três classes de usuário descritas, nessa versão inicial, foi considerada somente a classe de usuário visitante.
@@ -82,19 +82,18 @@ ferramenta, vide Figura \ref{fig:show-ferramenta}.
 \par
 Para classificar uma nova ferramenta, o usuário deve clicar no botão com o  sinal de "+", no canto inferior da tela Taxonomia, ilustrada na Figura \ref{fig:pag-taxonomia}. 
 Tendo feito isso, o formulário para classificação da ferramenta é exibido, conforme ilustrado na Figura \ref{fig:new-ferramenta}. 
-\newpage
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[scale=0.10]{./figuras/pagina-taxonomia.png}
+    \includegraphics[scale=0.15]{./figuras/pagina-taxonomia.png}
     \caption{Página Taxonomia em e-TAPE }
     \label{fig:pag-taxonomia}
 \end{figure}
-
+\pagebreak
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[scale=0.20]{./figuras/new-ferramenta.png}
+    \includegraphics[scale=0.30]{./figuras/new-ferramenta.png}
     \caption{Formulário de classificação ferramentas}
     \label{fig:new-ferramenta}
 \end{figure}
